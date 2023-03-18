@@ -5,7 +5,7 @@
  *
  * Description: A C program that prints numbers from 0 to 10
  *
- * Return always 0
+ * Return: Alawys 0 (success)
  *
 */
 
@@ -13,11 +13,10 @@ int main(void)
 {
 	int n = 0;
 
-	while (n == 11)
-	{
+	do {
 		printf("%d", n);
 		n++;
-	}
+	} while (n < 11);
 		printf("\n");
 	return (0);
 }
