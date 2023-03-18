@@ -15,10 +15,8 @@ int main(void)
 
 	do {
 	if (n != 101 && n != 113)
-	{
 		putchar(n);
 		n++;
-	}
 	} while (n < 123);
 		putchar('\n');
 	return (0);
