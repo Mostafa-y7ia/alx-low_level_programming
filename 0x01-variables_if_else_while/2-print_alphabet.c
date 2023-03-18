@@ -14,9 +14,9 @@ int main(void)
 	int n = 97;
 
 	do {
-		putchar(n)
+		putchar(n);
 		n++;
 	} while (n < 123);
-		putchar('\n')
+		putchar('\n');
 	return (0);
 }
