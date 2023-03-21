@@ -1,17 +1,12 @@
 #include "main.h"
-
 /**
- * print_alphabet - Entry point
- *
- * Description: A C program that prints alphabets with putchar
- *
- * Return: Alawys 0 (success)
-*/
-
+ * print_alphabet - prints alphabet
+ */
 void print_alphabet(void)
 {
-	for (char i = 'a'; i <= 'z'; i++)
-		_putchar(i);
+	char c;
 
+	for (c = 'a'; c <= 'z'; c++)
+		_putchar(c);
 	_putchar('\n');
 }
