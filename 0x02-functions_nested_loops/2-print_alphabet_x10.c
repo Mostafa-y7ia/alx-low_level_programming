@@ -1,20 +1,4 @@
-#include "main.h"
-
-void print_alphabet_x10(void);
-
-/**
- * main - Entry point
- *
- * Description: A C program that prints alphabets
- *
- * Return: Alawys 0 (success)
-*/
-
-int main(void)
-{
-	print_alphabet_x10();
-	return (0);
-}
+#include "main"
 
 /**
  * print_alphabet_x10 - Entry point
@@ -29,8 +13,8 @@ void print_alphabet_x10(void)
 	for (int x = 0; x < 10; x++)
 	{
 		for (int i = 97; i <= 122; i++)
-			putchar(i);
+			_putchar(i);
 
-		putchar('\n');
+		_putchar('\n');
 	}
 }
