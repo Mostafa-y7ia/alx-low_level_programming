@@ -1,21 +1,5 @@
 #include "main.h"
 
-void print_alphabet(void);
-
-/**
- * main - Entry point
- *
- * Description: A C program that prints alphabets
- *
- * Return: Alawys 0 (success)
-*/
-
-int main(void)
-{
-	print_alphabet();
-	return (0);
-}
-
 /**
  * print_alphabet - Entry point
  *
