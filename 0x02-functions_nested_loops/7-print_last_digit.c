@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  * print_last_digit - returns the last digit
  * @n: integer to be tested
@@ -6,5 +7,9 @@
 */
 int print_last_digit(int n)
 {
-	return (n % 10);
+	int x;
+
+	x = n % 10;
+	printf("%d", x);
+	return (x);
 }
