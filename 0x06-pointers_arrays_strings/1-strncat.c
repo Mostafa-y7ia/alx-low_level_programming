@@ -1,38 +1,30 @@
 #include "main.h"
-
 /**
- * _strncat - concat array to an array by n letters
- * @dest: char prameter
- * @src: char prameter
- * @n: int prameter
- * Return: char
-*/
-
+ * _strncat - concatenate two strings
+ * using at most n bytes from src
+ * @dest: input value
+ * @src: input value
+ * @n: input value
+ *
+ * Return: dest
+ */
 char *_strncat(char *dest, char *src, int n)
 {
-	int i = 0, j = 0, k = 0;
+	int i;
+	int j;
 
-	while (dest[j])
-		j++;
-
-	while (src[k])
-		k++;
-
-	if (n <= k)
-		while (src[i] < src[n])
-		{
-			dest[j] = src[i];
-			i++;
-			j++;
-		}
-
-	else
-		while (src[i])
-		{
-			dest[j] = src[i];
-			i++;
-			j++;
-		}
-	dest[j] = '\0';
+	i = 0;
+	while (dest[i] != '\0')
+	{
+		i++;
+	}
+	j = 0;
+	while (j < n && src[j] != '\0')
+	{
+	dest[i] = src[j];
+	i++;
+	j++;
+	}
+	dest[i] = '\0';
 	return (dest);
 }
