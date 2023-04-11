@@ -8,15 +8,17 @@
 */
 int main(int argc, char const *argv[])
 {
-	(void)argc;
 	int sum = 0;
 
-	if (argv[1] == '\0')
+	if (argc != 3)
 	{
 		printf("Error\n");
 		return (1);
 	}
-	sum = atoi(argv[1]) * atoi(argv[2]);
-	printf("%d\n", sum)
+	else
+	{
+		sum = atoi(argv[1]) * atoi(argv[2]);
+		printf("%d\n", sum);
+	}
 	return (0);
 }
