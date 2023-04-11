@@ -6,7 +6,7 @@
  * @argv: char array
  * Return: integer
 */
-int main(int argc, char const *argv[])
+int main(int argc, char *argv[])
 {
 	int s = 0;
 	char *p;
@@ -21,8 +21,8 @@ int main(int argc, char const *argv[])
 				return (1);
 			}
 		}
-		sum += atoi(argv[argc]);
+		s += atoi(argv[argc]);
 	}
-		printf("%d\n", sum);
+		printf("%d\n", s);
 	return (0);
 }
