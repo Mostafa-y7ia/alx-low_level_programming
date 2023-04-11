@@ -7,6 +7,8 @@
 */
 int main(int argc, char const *argv[])
 {
+	int sum = 0;
+
 	if (argv[1] == '\0')
 	{
 		printf("Error\n");
