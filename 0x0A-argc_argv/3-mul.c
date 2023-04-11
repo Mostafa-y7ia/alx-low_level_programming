@@ -8,6 +8,7 @@
 */
 int main(int argc, char const *argv[])
 {
+	(void)argc;
 	int sum = 0;
 
 	if (argv[1] == '\0')
